@@ -1,0 +1,12 @@
+lst= []
+strg =[]
+lst = [int(num) for num in input("enter the numbers").split()]
+find = int(input('enter the number to find'))
+flag='FALSE'
+for i in range(len(lst)) :
+    if lst[i] <= find  and flag == 'FALSE':
+        x=find - lst[i]
+        for j in range(len(lst)-1)  :
+                if x == lst[j+1]:
+                    flag='TRUE'
+                    print('TRUE')
